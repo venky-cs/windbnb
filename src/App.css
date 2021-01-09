@@ -3,3 +3,36 @@
   padding: 0;
   box-sizing: border-box;
 }
+.App{
+  width: 80%;
+  margin: 0 auto;
+}
+.header{
+  margin: 30px 0;
+  display: flex;
+  justify-content:space-between;
+}
+
+.header .search input,.header .search button{
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  border:1px solid #fff;
+  outline:none;
+  background-color:#fff;
+  height: 35px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.header .search input:first-child {
+  border-radius:12px 0 0 12px;
+}
+
+.header .search button {
+  border-radius: 0 12px 12px 0;
+}
+
+.header .search input:hover,
+.header .search button:hover
+  {
+  background-color:#f7f7f7;
+}
