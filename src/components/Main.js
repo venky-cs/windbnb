@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import stays from '../stays.json';
+import SuperHost from './SuperHost'
 
 function Main() {
     const [state, setState] = useState(stays)
@@ -17,6 +18,11 @@ function Main() {
                 return (
                 <div className = "card" >
                 <img src={stay.photo} alt="pic"/>
+                <div className = "card-info">
+                    {stay.superHost && <SuperHost />}
+                    <p>{stay.type}{stay.beds && ` .${stay.beds}beds`}</p>
+                    <p>{stay.rating}</p>
+                </div>
                 <h4 className='title'>{stay.title}</h4>
             </div>
                 )
