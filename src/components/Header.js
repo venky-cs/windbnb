@@ -9,8 +9,8 @@ function Header() {
             </div>
 
             <div className="search">
-                <input type="text" name="" id=""/>
-                <input type="text" name="" id=""/>
+                <input type="text" name="" id="" placeholder="Add Location"/>
+                <input type="text" name="" id="" placeholder="Add Guest"/>
                 <button>Search</button>
             </div>
         </div>
