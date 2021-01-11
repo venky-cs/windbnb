@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import stays from '../stays.json';
-import SuperHost from './SuperHost'
+import SuperHost from './SuperHost';
+
 
 function Main() {
     const [state, setState] = useState(stays)
+
     return (
         <div className="main">
             <div className="head">
@@ -25,9 +27,12 @@ function Main() {
                 </div>
                 <h4 className='title'>{stay.title}</h4>
             </div>
-                )
+
+)
             })}
+
             </div>
+
             
         </div>
     )
