@@ -7,7 +7,7 @@ import Footer from './components/Footer'
 export let UserContext =''
 
 function App() {
-  const [location, setLocation] = useState("Helsinki,Finland");
+  const [location, setLocation] = useState("");
 
   const list = [
     'Helsinki,Finland',

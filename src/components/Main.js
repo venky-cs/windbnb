@@ -7,10 +7,13 @@ function Main() {
     const [state, setState] = useState(stays)
     const Context = useContext(UserContext)
     let location =Context.location
+    location=location.split(',')
+    location=location[0]
 
     useEffect(() => {
         let filtered = stays.filter(stay => stay.city === location);
-        setState(filtered)
+        console.log(filtered)
+        setState(filtered.length === 0 ?stays : filtered)
     }, [location])
 
     return (
