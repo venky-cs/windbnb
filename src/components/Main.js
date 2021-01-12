@@ -1,10 +1,17 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState,useContext,useEffect } from 'react';
 import stays from '../stays.json';
-import SuperHost from './SuperHost';
+import { UserContext } from '../App'
 
 
 function Main() {
     const [state, setState] = useState(stays)
+    const Context = useContext(UserContext)
+    let location =Context.location
+
+    useEffect(() => {
+        let filtered = stays.filter(stay => stay.city === location);
+        setState(filtered)
+    }, [location])
 
     return (
         <div className="main">
@@ -21,7 +28,6 @@ function Main() {
                 <div className = "card" >
                 <img src={stay.photo} alt="pic"/>
                 <div className = "card-info">
-                    {stay.superHost && <SuperHost />}
                     <p>{stay.type}{stay.beds && ` .${stay.beds}beds`}</p>
                     <p>{stay.rating}</p>
                 </div>
