@@ -5,6 +5,7 @@ function PopUp() {
     const [focus,setFocus]=useState(false)
     console.log(focus)
     return (
+        <div className="overlay">
         <div className="pop-up">
             <div className="search">
                 <input type="text" name="" id="" placeholder="Add Location" value= {location} onFocus={() => setFocus(true)}/>
@@ -22,6 +23,7 @@ function PopUp() {
                 </>}
             </div>
 
+        </div>
         </div>
     )
 }
