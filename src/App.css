@@ -114,6 +114,12 @@ footer p{
   cursor: pointer;
 }
 
+.pop-up .guest{
+  display: inline-block;
+  position: relative;
+  left:450px
+}
+
 
 @keyframes popup {
   0% {
