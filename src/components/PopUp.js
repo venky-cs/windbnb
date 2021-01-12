@@ -1,26 +1,30 @@
-import React,{useState} from 'react'
+import React,{useState,useContext} from 'react'
+import { UserContext } from '../App'
 
-function PopUp() {
-    const [location, setLocation] = useState("Helsinki,Finland");
-    const [focus,setFocus]=useState(false)
+function PopUp({close}) {
+    const Context=useContext(UserContext)
+    const [focus,setFocus]=useState(false);
+    const [guest,setGuest]=useState('12');
     console.log(focus)
+    console.log(Context.updateLocation)
     return (
         <div className="overlay">
+            <button className="close" onClick={() => close()}>X</button>
         <div className="pop-up">
             <div className="search">
-                <input type="text" name="" id="" placeholder="Add Location" value= {location} onFocus={() => setFocus(true)}/>
-                <input type="text" name="" id="" placeholder="Add Guest" />
+                <input type="text" name="" id="" placeholder="Add Location" value= {Context.location} onFocus={() => setFocus(true)}/>
+                <input type="text" name="" id="" placeholder="Add Guest" value={guest} onFocus={() => setFocus(true)}/>
                 <button onClick={() =>setFocus(false)}>Search</button>
             </div>
 
             <div className="list">
-                {focus && 
-                <>
-                    <li onClick={() => setLocation("Helsinki,Finland")}>Helsinki,Finland</li>
-                    <li onClick={() => setLocation("Turku,Finland")} >Turku,Finland</li>
-                    <li onClick={() => setLocation("Oulu,Finland")}>Oulu,Finland</li>
-                    <li onClick={() => setLocation("Vaasa,Finland")}>Vaasa,Finland</li>
-                </>}
+                {focus && Context.list.map(list => {
+                    return(
+                    <>
+                    <li onClick={(e) => Context.updateLocation(e)} value={list}>{list}</li>
+                    </>
+                    )
+                })}
             </div>
 
         </div>
