@@ -73,7 +73,6 @@
   border-radius: 12px;
   text-transform: uppercase;
 }
-
 footer p{
   text-align: center;
   padding:25px 0px;
@@ -147,10 +146,22 @@ footer p{
   }
 }
 
-.close{
+/* .close{
   float: right;
   width:40px;
   height: 50px;
   background-color:red;
   color: white;
+} */
+
+
+.guests{
+  display:flex;flex-direction:column;
+}
+.guest .count{
+  display: flex;
+  justify-content:space-between;
+}
+.guest .count button{
+  padding: 0 10px;
 }

@@ -28,7 +28,7 @@ function App() {
   );
 
   function updateLocation(e){
-    let value = e.target.outerText;
+    let value = e;
     value =value.split(',')
     console.log(value[0])
     setLocation(value[0])
