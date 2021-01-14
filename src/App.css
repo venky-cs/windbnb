@@ -114,6 +114,12 @@ font-family: 'Mulish',sans-serif;
   line-height: 17px;
   color: #828282;
 }
+.rating{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 3px;
+}
 .title{
   font-family: Montserrat,sans-serif;
   font-style: normal;
@@ -177,6 +183,23 @@ footer p{
   display: inline-block;
   position: relative;
   left:33%
+}
+
+.popup-btn{
+  color:white;
+  background-color:red !important;
+  width: 100px;
+}
+
+#red{
+  color:red
+}
+
+#search{
+  width: 25px;
+  height: 10px;
+  color: red;
+  font-weight: bold;
 }
 
 

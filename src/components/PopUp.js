@@ -1,6 +1,8 @@
 import React,{useState,useContext,useEffect} from 'react'
 import { UserContext } from '../App'
 
+import SearchIcon from '@material-ui/icons/Search';
+
 function PopUp({close}) {
     const Context=useContext(UserContext)
     const [focus,setFocus]=useState({
@@ -25,7 +27,7 @@ function PopUp({close}) {
             <div className="search">
                 <input type="text" name="" id="" placeholder="Add Location" value= {value} onMouseOver={() => setFocus({city:true})}/>
                 <input type="text" name="" id="" placeholder="Add Guest" value={guest &&`${guest} guests`} onMouseOver={() => setFocus({guest:true})}/>
-                <button onClick={() =>Context.updateLocation(value)}>Search</button>
+                <button className="popup-btn" onClick={() =>Context.updateLocation(value)}><SearchIcon />Search</button>
             </div>
 
             <div className="list">

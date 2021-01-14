@@ -2,6 +2,8 @@ import React, { useState,useContext,useEffect } from 'react';
 import stays from '../stays.json';
 import { UserContext } from '../App'
 
+import StarRateIcon from '@material-ui/icons/StarRate';
+
 
 function Main() {
     const [state, setState] = useState(stays)
@@ -34,7 +36,7 @@ function Main() {
                     {stay.superHost &&
                     <p className="super">super host</p>}
                             <p className="type">{stay.type}{stay.beds && ` .${stay.beds}beds`}</p>
-                    <p className = "rating">{stay.rating}</p>
+                    <p className = "rating"><StarRateIcon id="red" />{stay.rating}</p>
                 </div>
                 <h4 className='title'>{stay.title}</h4>
             </div>
