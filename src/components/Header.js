@@ -6,7 +6,7 @@ import {UserContext} from '../App'
 
 function Header() {
     const [popup, setPopup] = useState(false)
-    console.log(popup)
+    // console.log(popup)
 
     const Context=useContext(UserContext)
     return (

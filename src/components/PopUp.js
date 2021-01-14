@@ -16,15 +16,15 @@ function PopUp({close}) {
     }, [adult,child])
 
     const [value,setValue]=useState('')
-    console.log(focus)
-    console.log(Context.updateLocation)
+    // console.log(focus)
+    // console.log(Context.updateLocation)
     return (
         <div className="overlay">
             {/* <button className="close" onClick={() => close()}>X</button> */}
         <div className="pop-up">
             <div className="search">
                 <input type="text" name="" id="" placeholder="Add Location" value= {value} onMouseOver={() => setFocus({city:true})}/>
-                <input type="text" name="" id="" placeholder="Add Guest" value={guest} onMouseOver={() => setFocus({guest:true})}/>
+                <input type="text" name="" id="" placeholder="Add Guest" value={guest &&`${guest} guests`} onMouseOver={() => setFocus({guest:true})}/>
                 <button onClick={() =>Context.updateLocation(value)}>Search</button>
             </div>
 
@@ -53,8 +53,8 @@ function PopUp({close}) {
                                     </div>
                                 </div>
                                 <div className="guest">
-                                    <label>Adults</label>
-                                    <p>Ages 13 or above</p>
+                                    <label>Children</label>
+                                    <p>Ages 2 - 12</p>
                                     <div className="count">
                                         <button onClick={() =>setChild(child -1)}>-</button>
                                         <p>{child}</p>

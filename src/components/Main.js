@@ -12,7 +12,7 @@ function Main() {
 
     useEffect(() => {
         let filtered = stays.filter(stay => stay.city === location);
-        console.log(filtered)
+        // console.log(filtered)
         setState(filtered.length === 0 ?stays : filtered)
     }, [location])
 
@@ -31,8 +31,10 @@ function Main() {
                 <div className = "card" >
                 <img src={stay.photo} alt="pic"/>
                 <div className = "card-info">
-                    <p>{stay.type}{stay.beds && ` .${stay.beds}beds`}</p>
-                    <p>{stay.rating}</p>
+                    {stay.superHost &&
+                    <p className="super">super host</p>}
+                            <p className="type">{stay.type}{stay.beds && ` .${stay.beds}beds`}</p>
+                    <p className = "rating">{stay.rating}</p>
                 </div>
                 <h4 className='title'>{stay.title}</h4>
             </div>

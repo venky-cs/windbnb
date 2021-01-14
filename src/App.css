@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Mulish:wght@400;800&display=swap');
+
+/* 
+font-family: 'Montserrat',sans-serif;
+font-family: 'Mulish',sans-serif; 
+*/
 *{
   margin: 0;
   padding: 0;
@@ -14,6 +20,11 @@
 }
 
 .search input,.search button{
+  font-family: Mulish,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
   border:1px solid #fff;
   outline:none;
@@ -45,20 +56,37 @@
   display: flex;
   justify-content:space-between;
 }
+.head .main-title {
+  font-family: Montserrat,
+    sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+}
+.head .count{
+  font-family: Montserrat,
+  sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
 
 .cards{
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 395px 395px 395px;
   padding: 10px;
+  align-items: center;
+  justify-content:center;
 }
 .card{
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
-  height: 320px;
 }
 .card img{
   width: 100%;
-  height: 80%;
+  height: 270px;
   border-radius: 12px;
 }
 .card-info{
@@ -68,17 +96,43 @@
   justify-content:space-around;
 }
 .super{
-  padding: 0 10px;
-  border: 1px solid black;
+  font-family: Montserrat,sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 5px 10px;
+  border: 1px solid #4f4f4f;
   border-radius: 12px;
   text-transform: uppercase;
+}
+.type,.rating,.guest p{
+  font-family: Montserrat,sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+}
+.title{
+  font-family: Montserrat,sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
 }
 footer p{
   text-align: center;
   padding:25px 0px;
-  border-top: 1px solid black;
+  border-top: 1px solid #bdbdbd;
   width: 50%;
   margin: 0 auto;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #A9A9A9;
 }
 
 .overlay{
@@ -111,6 +165,12 @@ footer p{
 .pop-up .list li{
   padding: 15px;
   cursor: pointer;
+  font-family: Mulish,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #4f4f4f;
 }
 
 .pop-up .guest{
@@ -157,6 +217,18 @@ footer p{
 
 .guests{
   display:flex;flex-direction:column;
+}
+.guest{
+  margin: 10px 0; 
+}
+.guest label{
+  font-family: Mulish,sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+
 }
 .guest .count{
   display: flex;
