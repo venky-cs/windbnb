@@ -71,6 +71,7 @@ font-family: 'Mulish',sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
+  text-align: center;
 }
 
 .cards{
@@ -259,4 +260,44 @@ footer p{
 }
 .guest .count button{
   padding: 0 10px;
+}
+
+
+@media (max-width:450px){
+  .header,.cards{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+  }
+  .search{
+    display: flex;
+    margin-top: 30px;
+  }
+  .header>.search input,
+  .search button{
+    width: 120px;
+    height: 50px;
+  }
+  .overlay{
+    width: 100%;
+    height: 100%;
+    background-color:white;
+  }
+  .pop-up,.pop-up > .search{
+    width:100% !important;
+  }
+  .pop-up >.search{
+    display: flex ;
+    flex-direction:column;
+  }
+  .pop-up>.search input,
+  .pop-up>.search button{
+        width: 80%;
+  }
+  p{
+    font-size: 10px !important;
+  }
+  .super{
+    width: 100px;
+  }
 }
