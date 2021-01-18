@@ -330,4 +330,18 @@ footer p{
   .super{
     width: 100px;
   }
+  .pop-up .popup-btn {
+   position: relative;
+   top: 300px;
+  }
+
+  .pop-up .list{
+    margin: 5px;
+  }
+  .pop-up .guest {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0
+  }
 }
