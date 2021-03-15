@@ -15,11 +15,12 @@ function App() {
     'Oulu,Finland',
     'Vaasa,Finland'
   ]
-  UserContext = React.createContext({location,list,updateLocation})
+  const [count,setCount] = useState('');
+  UserContext = React.createContext({location,list,updateLocation,count,updateCount})
 
   return (
     <div className="App">
-      <UserContext.Provider value={{location,list,updateLocation}}>
+      <UserContext.Provider value={{location,list,updateLocation,count,updateCount}}>
       <Header />
       <Main />
       <Footer />
@@ -32,6 +33,11 @@ function App() {
     value =value.split(',')
     // console.log(value[0])
     setLocation(value[0])
+  }
+
+  function updateCount(e){
+    console.log(e)
+    setCount(`${e} guests`)
   }
 
 }

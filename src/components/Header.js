@@ -19,7 +19,7 @@ function Header() {
 
             <div className="search">
                 <input type="text" name="" id="" placeholder="Add Location" value={Context.location} onClick={() => setPopup(true)}/>
-                <input type="text" name="" id="" placeholder="Add Guest" onClick={() => setPopup(true)}/>
+                <input type="text" name="" id="" placeholder="Add Guest" value={Context.count} onClick={() => setPopup(true)}/>
                 <button><SearchIcon id="search" /></button>
             </div>
 

@@ -27,7 +27,11 @@ function PopUp({ close }) {
                 <div className="search">
                     <input type="text" name="" id="" placeholder="Add Location" value={value} onMouseOver={() => setFocus({ city: true })} />
                     <input type="text" name="" id="" placeholder="Add Guest" value={guest && `${guest} guests`} onMouseOver={() => setFocus({ guest: true })} />
-                    <button className="popup-btn" onClick={() => Context.updateLocation(value)}><SearchIcon />Search</button>
+                    <button className="popup-btn" onClick={() => 
+                        {
+                        Context.updateLocation(value)
+                        Context.updateCount(guest)
+                        }}><SearchIcon />Search</button>
                 </div>
 
                 <div className="list">
