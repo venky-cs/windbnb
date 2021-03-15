@@ -29,7 +29,7 @@ font-family: 'Mulish',sans-serif;
   border:1px solid #fff;
   outline:none;
   background-color:#fff;
-  height: 35px;
+  height: 40px;
   cursor: pointer;
   padding: 10px;
 }
@@ -83,6 +83,7 @@ font-family: 'Mulish',sans-serif;
 .card{
   background-color: rgba(255, 255, 255, 0.8);
   margin: 10px 20px;
+  height:350px
 }
 .card img{
   width: 100%;
@@ -188,7 +189,6 @@ footer p{
 .popup-btn{
   color:white;
   background-color:red !important;
-  width: 100px;
 }
 
 #red{
@@ -199,6 +199,12 @@ footer p{
   width: 25px;
   height: 10px;
   color: red;
+  font-weight: bold;
+}
+
+#search-icon{
+  font-size: 16px;
+  margin-right: 5px;
   font-weight: bold;
 }
 
@@ -263,12 +269,12 @@ footer p{
 
 @media (max-width: 1024px){
   p{
-    font-size:11px !important;
-    font-weight:bold !important;
+    font-size:11px ;
+    font-weight:bold ;
   }
   .cards {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     align-items: center;
     justify-content: center;
     padding: 0;
@@ -276,15 +282,13 @@ footer p{
   .card{
     margin-bottom:10px;
   }
-  .card img{
-    height:200px;
-  }
+  
   .card-info{
     width: 100%;
     height: 50px;
   }
   .card-info .super,.card-info .type{
-    width: 45%;
+    width: fit-content;
   }
 
   .pop-up .guest {
@@ -324,8 +328,12 @@ footer p{
   .pop-up>.search button{
         width: 80%;
   }
+  h4.title{
+    font-size:12px;
+  }
   p{
-    font-size: 10px !important;
+    font-size: 9px !important;
+    font-weight: bold !important;
   }
   .super{
     width: 100px;
@@ -343,5 +351,8 @@ footer p{
     top: 0;
     bottom: 0;
     left: 0
+  }
+  .card-info{
+    margin-bottom: 20px;
   }
 }

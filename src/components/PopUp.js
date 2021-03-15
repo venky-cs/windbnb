@@ -32,7 +32,7 @@ function PopUp({ close }) {
                         {
                         Context.updateLocation(value)
                         Context.updateCount(guest)
-                        }}><SearchIcon />Search</button>
+                        }}><SearchIcon id="search-icon"/>Search</button>
                 </div>
 
                 <div className="list">
