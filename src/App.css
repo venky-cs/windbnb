@@ -4,38 +4,39 @@
 font-family: 'Montserrat',sans-serif;
 font-family: 'Mulish',sans-serif; 
 */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.App{
+.App {
   width: 80%;
   margin: 0 auto;
 }
-.header{
+.header {
   margin: 30px 0;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
-.search input,.search button{
-  font-family: Mulish,sans-serif;
+.search input,
+.search button {
+  font-family: Mulish, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
-  border:1px solid #fff;
-  outline:none;
-  background-color:#fff;
+  border: 1px solid #fff;
+  outline: none;
+  background-color: #fff;
   height: 40px;
   cursor: pointer;
   padding: 10px;
 }
 
 .search input:first-child {
-  border-radius:12px 0 0 12px;
+  border-radius: 12px 0 0 12px;
 }
 
 .search button {
@@ -43,30 +44,27 @@ font-family: 'Mulish',sans-serif;
 }
 
 .search input:hover,
-.search button:hover
-  {
-  background-color:#f7f7f7;
+.search button:hover {
+  background-color: #f7f7f7;
 }
 
-.main{
-  margin:100px 0;
+.main {
+  margin: 100px 0;
 }
 
-.head{
+.head {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 .head .main-title {
-  font-family: Montserrat,
-    sans-serif;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
 }
-.head .count{
-  font-family: Montserrat,
-  sans-serif;
+.head .count {
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -74,30 +72,30 @@ font-family: 'Mulish',sans-serif;
   text-align: center;
 }
 
-.cards{
+.cards {
   display: grid;
   grid-template-columns: 395px 395px 395px;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
-.card{
+.card {
   background-color: rgba(255, 255, 255, 0.8);
   margin: 10px 20px;
-  height:350px
+  height: 350px;
 }
-.card img{
+.card img {
   width: 100%;
   height: 270px;
   border-radius: 12px;
 }
-.card-info{
+.card-info {
   display: flex;
-  margin:5px 10px;
+  margin: 5px 10px;
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around;
 }
-.super{
-  font-family: Montserrat,sans-serif;
+.super {
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -107,30 +105,32 @@ font-family: 'Mulish',sans-serif;
   border-radius: 12px;
   text-transform: uppercase;
 }
-.type,.rating,.guest p{
-  font-family: Montserrat,sans-serif;
+.type,
+.rating,
+.guest p {
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   color: #828282;
 }
-.rating{
+.rating {
   display: flex;
   text-align: center;
   align-items: center;
   gap: 3px;
 }
-.title{
-  font-family: Montserrat,sans-serif;
+.title {
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
 }
-footer p{
+footer p {
   text-align: center;
-  padding:25px 0px;
+  padding: 25px 0px;
   border-top: 1px solid #bdbdbd;
   width: 50%;
   margin: 0 auto;
@@ -139,40 +139,41 @@ footer p{
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-  color: #A9A9A9;
+  color: #a9a9a9;
 }
 
-.overlay{
+.overlay {
   position: absolute;
-  background-color:rgba(153, 146, 146, 0.37);
+  background-color: rgba(153, 146, 146, 0.37);
   width: 80%;
   height: 100%;
 }
 
-.pop-up{
+.pop-up {
   width: 80%;
   margin: 0 auto;
   position: relative;
   height: 50%;
-  background-color:white;
-  animation:popup 0.7s;
-  border-radius:0px 0px 12px 12px;
+  background-color: white;
+  animation: popup 0.7s;
+  border-radius: 0px 0px 12px 12px;
 }
-.pop-up > .search input, .pop-up > .search button{
-  margin-top:50px;
+.pop-up > .search input,
+.pop-up > .search button {
+  margin-top: 50px;
   width: 33.33333%;
   height: 50px;
 }
 
-.pop-up .list{
+.pop-up .list {
   display: inline-block;
   list-style-type: none;
   margin: 12px;
 }
-.pop-up .list li{
+.pop-up .list li {
   padding: 15px;
   cursor: pointer;
-  font-family: Mulish,sans-serif;
+  font-family: Mulish, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -180,34 +181,33 @@ footer p{
   color: #4f4f4f;
 }
 
-.pop-up .guest{
+.pop-up .guest {
   display: inline-block;
   position: relative;
-  left:33%
+  left: 33%;
 }
 
-.popup-btn{
-  color:white;
-  background-color:red !important;
+.popup-btn {
+  color: white;
+  background-color: red !important;
 }
 
-#red{
-  color:red
+#red {
+  color: red;
 }
 
-#search{
+#search {
   width: 25px;
   height: 10px;
   color: red;
   font-weight: bold;
 }
 
-#search-icon{
+#search-icon {
   font-size: 16px;
   margin-right: 5px;
   font-weight: bold;
 }
-
 
 @keyframes popup {
   0% {
@@ -243,34 +243,33 @@ footer p{
   color: white;
 } */
 
-
-.guests{
-  display:flex;flex-direction:column;
+.guests {
+  display: flex;
+  flex-direction: column;
 }
-.guest{
-  margin: 10px 0; 
+.guest {
+  margin: 10px 0;
 }
-.guest label{
-  font-family: Mulish,sans-serif;
+.guest label {
+  font-family: Mulish, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 18px;
   color: #333333;
-
 }
-.guest .count{
+.guest .count {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
-.guest .count button{
+.guest .count button {
   padding: 0 10px;
 }
 
-@media (max-width: 1024px){
-  p{
-    font-size:11px ;
-    font-weight:bold ;
+@media (max-width: 1024px) {
+  p {
+    font-size: 11px;
+    font-weight: bold;
   }
   .cards {
     grid-template-columns: 1fr 1fr;
@@ -279,11 +278,11 @@ footer p{
     justify-content: center;
     padding: 0;
   }
-  .card{
-    margin-bottom:50px;
+  .card {
+    margin-bottom: 50px;
   }
-  
-  .card-info{
+
+  .card-info {
     width: fit-content;
   }
   /* .card-info .super,.card-info .type{
@@ -295,64 +294,66 @@ footer p{
   }
 }
 
-
-@media (max-width:450px){
-  .header,.cards{
+@media (max-width: 450px) {
+  .header,
+  .cards {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     width: 100%;
   }
-  .card{
-    margin-bottom:20px;
+  .card {
+    margin-bottom: 20px;
   }
-  .search{
+  .search {
     display: flex;
     margin-top: 30px;
   }
-  .header>.search input,
-  .search button{
+  .header > .search input,
+  .search button {
     width: 120px;
     height: 50px;
   }
-  .overlay{
-    width: 100%;
-    height: 100%;
-    background-color:white;
+  .overlay {
+    width: 80vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: white;
+    overflow: hidden;
   }
-  .pop-up,.pop-up > .search{
-    width:100% !important;
+  .pop-up,
+  .pop-up > .search {
+    width: 100% !important;
   }
-  .pop-up >.search{
-    display: flex ;
-    flex-direction:column;
+  .pop-up > .search {
+    display: flex;
+    flex-direction: column;
   }
-  .pop-up>.search input,
-  .pop-up>.search button{
-        width: 80%;
+  .pop-up > .search input,
+  .pop-up > .search button {
+    width: 80%;
   }
-  h4.title{
-    font-size:12px;
+  h4.title {
+    font-size: 12px;
   }
-  p{
+  p {
     font-size: 9px !important;
     font-weight: bold !important;
   }
-  .super{
+  .super {
     width: 100px;
   }
   .pop-up .popup-btn {
-   position: relative;
-   top: 300px;
+    position: relative;
+    top: 300px;
   }
 
-  .pop-up .list{
+  .pop-up .list {
     margin: 5px;
   }
   .pop-up .guest {
     position: relative;
     top: 0;
     bottom: 0;
-    left: 0
+    left: 0;
   }
-  
 }
